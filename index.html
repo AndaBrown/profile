@@ -17,16 +17,49 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="./favicon.ico">
     <script>
-        !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
-    </script>
-    <script>
         // 判断非本机且未使用 https 时，强制重定向到 https。
         if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
             window.location = window.location.toString().replace(/^http:/, "https:");
     </script>
+    <style>
+        .bg-cover{
+            position:fixed;
+            top: 0px;
+            left: 0px;
+            outline:5000px solid rgba(0, 0, 0, 0.25);
+            z-index: 0;
+        }
+    </style>
+
+  <!--51LA-->
+  <script>
+    !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
+  </script>
+  <!--灵雀-->
+  <script>
+    !(function(c,i,e,b){
+    var h=i.createElement("script");
+    var f=i.getElementsByTagName("script")[0];
+    h.type="text/javascript";
+    h.crossorigin=true;
+    h.onload=function(){new c[b]["Monitor"]().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true,ignoreVendor:false});};
+    f.parentNode.insertBefore(h,f);h.src=e;})(window,document,"https://sdk.51.la/perf/js-sdk-perf.min.js","LingQue");
+  </script>
+  <!--百度-->
+  <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?79bf7c0fda66b8c7343c49d5adf9a3fb";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+  </script>
+    
 </head>
 
 <body>
+    <div class="bg-img"></div>
     <span class="mobile btn-mobile-menu">
         <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
         <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
@@ -51,14 +84,14 @@
                         </a>
                     </div>
                     <!--<h1 class="panel-cover__title panel-title iUp">
-                        <a href="#" title="Dmego Home"></a>
+                        <a href="#" title="wzx"></a>
                     </h1>-->
                     <br/>
-                    <h1 class="panel-cover__subtitle panel-subtitle iUp"><strong>wzx个人主页</strong></h1>
+                    <p class="panel-cover__subtitle panel-subtitle iUp" style="font-size:22px; color:#FFFFFF;"><strong>wzx个人主页</strong></p>
                     <hr class="panel-cover__divider iUp" />
                     <p id="description" class="panel-cover__description iUp">黑暗孕育了光明，而光明却背离黑暗。诅咒黑暗。
                         <br/>
-                        -「<strong>歌德《浮士德》</strong>」
+                        -「<strong>浮士德</strong>」
                     </p>
                     <div class="navigation-wrapper iUp">
                         <div>
@@ -128,17 +161,17 @@
                     </div>
                 </div>
             </div>
-            <div class="panel-cover--overlay cover-slate"></div>
+            <div class="panel-cover--overlay cover-slate" style="background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://www.dmoe.cc/random.php);"></div>
+            <div class="bg-cover"></div>
         </div>
         <div class="remark iUp">
             <p class="power">©版权所有
-                <a href="#">wzx个人主页</a>，保留一切权利。
+                <a href="/">wzx个人主页</a>，保留一切权利。
                 Powered by <a href="https://github.com/website-pages" target="_blank">website-pages</a>.
             </p>
         </div>
     </header>
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/json/images.json?cb=getBingImages"></script>
 </body>
 </html>
