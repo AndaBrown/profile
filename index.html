@@ -1,7 +1,5 @@
 <!DOCTYPE html>
-<html>
-
-<head>
+<html><head>
     <!-- Meta, title, CSS, favicons, etc. -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +11,7 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/onlinewebfonts.css"/>
     <link rel="stylesheet" type="text/css" href="./assets/css/vno.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
     <link rel="icon" href="./favicon.ico">
     <script>
         // 判断非本机且未使用 https 时，强制重定向到 https。
@@ -87,12 +84,16 @@
                         <a href="#" title="wzx"></a>
                     </h1>-->
                     <br/>
-                    <p class="panel-cover__subtitle panel-subtitle iUp" style="font-size:22px; color:#FFFFFF;"><strong>wzx个人主页</strong></p>
+                    <p class="panel-cover__subtitle panel-subtitle iUp" style="font-size:22px; color:#FFFFFF;"><strong>wzx个人主页</strong></p>					
                     <hr class="panel-cover__divider iUp" />
                     <p id="description" class="panel-cover__description iUp">黑暗孕育了光明，而光明却背离黑暗。诅咒黑暗。
                         <br/>
                         -「<strong>浮士德</strong>」
                     </p>
+					<hr class="panel-cover__divider iUp" />
+					<div class="iUp">
+						<a href="./status" target="_blank" style="font-size:16px; color:#00FF7F;">站点状态</a>
+					</div>
                     <div class="navigation-wrapper iUp">
                         <div>
                             <nav class="cover-navigation cover-navigation--primary">
@@ -121,38 +122,43 @@
                                     </li>
                                 </ul>
                             </nav>
-                        </div>
+                        </div>						
                         <div class="iUp">
                             <nav class="cover-navigation navigation--social">
                                 <ul class="navigation">
                                     <li class="navigation__item">
                                         <a href="https://github.com/website-pages" title="GitHub" target="_blank">
                                             <i class='fa fa-github'></i>
-                                            <span class="label">GitHub</span>
                                         </a>
                                     </li>
                                     <li class="navigation__item">
                                         <a href="mailto:unpu123456@hotmail.com" title="电子邮件">
                                             <i class='fa fa-envelope'></i>
-                                            <span class="label">电子邮件</span>
                                         </a>
                                     </li>
                                     <li class="navigation__item">
                                         <a href="http://wpa.qq.com/msgrd?v=3&uin=1961488623&site=qq&menu=yes" title="QQ" target="_balnk">
                                             <i class='fa fa-qq'></i>
-                                            <span class="label">QQ</span>
                                         </a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="https://wzx.js.cool/post-images/wechat.jpg" title="微信" target="_balnk">
+                                        <a href="https://wzx.js.cool/post-images/wechat.jpg" title="微信" target="_blank">
                                             <i class='fa fa-wechat'></i>
-                                            <span class="label">微信</span>
                                         </a>
                                     </li>
                                     <li class="navigation__item">
-                                        <a href="http://wzx.js.cool/post/about" title="关于" target="_balnk">
+                                        <a href="http://wzx.js.cool/post/about" title="关于" target="_blank">
                                             <i class='fa fa-info-circle'></i>
-                                            <span class="label">关于</span>
+                                        </a>
+                                    </li>
+									<li class="navigation__item">
+                                        <a href="./images/wechatpay.png" title="捐赠" target="_balnk">
+                                            <i class='fa fa-cny'></i>
+                                        </a>
+                                    </li>
+									<li class="navigation__item">
+                                        <a href="javascript:void(0);" title="刷新" onclick="toRefresh()">
+                                            <i class='fa fa-refresh'></i>
                                         </a>
                                     </li>
                                 </ul>
@@ -174,4 +180,10 @@
     <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/js/main.js"></script>
 </body>
+<script>
+	function toRefresh(){
+		window.location.reload();
+	}
+</script>
+
 </html>
