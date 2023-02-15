@@ -1,318 +1,54 @@
-<!DOCTYPE html>
-<!--
-	源码来自DMEGO，根据开源协议进行了一些改动。
-    wzx个人主页 | wzx.is-a.dev
--->
+﻿<!DOCTYPE html>
 <html>
 <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="wzx个人主页">
-    <meta name="keywords" content="wzx个人主页">
-    <meta name="author" content="wzx">
-    <title>wzx个人主页</title>
-    <link rel="stylesheet" type="text/css" href="./assets/css/onlinewebfonts.css"/>
-    <link rel="stylesheet" type="text/css" href="./assets/css/vno.css">
-    <link rel="stylesheet" type="text/css" href="./assets/css/iconfont.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="icon" href="./favicon.ico">
-    <script>
-        // 判断非本机且未使用 https 时，强制重定向到 https。
-        if ((!window.location.host.startsWith("localhost")) && (window.location.protocol == "http:"))
-            window.location = window.location.toString().replace(/^http:/, "https:");
-    </script>
-    <style>
-        .bg-cover{
-            position:fixed;
-            top: 0px;
-            left: 0px;
-            outline:5000px solid rgba(0, 0, 0, 0.3);
-            z-index: 0;
-        }
-    </style>
-
-  <!--51LA-->
-  <script>
-    !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"});
-  </script>
-  <!--灵雀-->
-  <script>
-    !(function(c,i,e,b){
-    var h=i.createElement("script");
-    var f=i.getElementsByTagName("script")[0];
-    h.type="text/javascript";
-    h.crossorigin=true;
-    h.onload=function(){new c[b]["Monitor"]().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true,ignoreVendor:false});};
-    f.parentNode.insertBefore(h,f);h.src=e;})(window,document,"https://sdk.51.la/perf/js-sdk-perf.min.js","LingQue");
-  </script>
-  <!--百度-->
-  <script>
-    var _hmt = _hmt || [];
-    (function() {
-      var hm = document.createElement("script");
-      hm.src = "https://hm.baidu.com/hm.js?79bf7c0fda66b8c7343c49d5adf9a3fb";
-      var s = document.getElementsByTagName("script")[0]; 
-      s.parentNode.insertBefore(hm, s);
-    })();
-  </script>
-    
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">   
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="format-detection" content="telephone=no">
+        <title>网站改造升级中……</title>
+        <link rel="stylesheet" href="yanyi/css/base.css" type="text/css">
+        <link rel="stylesheet" href="yanyi/css/main.css" type="text/css">
+		<!--Google Analytics(gtag)-->
+		<script type="text/javascript">
+		  (function(c,l,a,r,i,t,y){
+			  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+			  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+			  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+		  })(window, document, "clarity", "script", "fu11495sl7");
+		</script>
+		<!--Microsoft Clarity-->
+		<script type="text/javascript">
+		  (function(c,l,a,r,i,t,y){
+			  c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+			  t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+			  y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+		  })(window, document, "clarity", "script", "fu11495sl7");
+		</script>
+		<!--百度统计-->
+		<script>
+		  var _hmt = _hmt || [];
+		  (function() {
+			var hm = document.createElement("script");
+			hm.src = "https://hm.baidu.com/hm.js?6f06504e0effd8ada0d6de8da7cdb9c1";
+			var s = document.getElementsByTagName("script")[0]; 
+			s.parentNode.insertBefore(hm, s);
+		  })();
+		</script>
+		<!--51LA统计-->
+		<script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+		<script>LA.init({id:"JgqPSyTX0bBpPwXV",ck:"JgqPSyTX0bBpPwXV"})</script>
+		<!--灵雀应用监控-->
+		<script src="https://sdk.51.la/perf/js-sdk-perf.min.js" crossorigin="anonymous"></script>
+		<script>
+		  new LingQue.Monitor().init({id:"Jk6zc9D356fnVo2s",sendSuspicious:true});
+		</script>
 </head>
-
-<body>
-    <div class="bg-img"></div>
-    <span class="mobile btn-mobile-menu">
-        <i class="social iconfont icon-list btn-mobile-menu__icon"></i>
-        <i class="social iconfont icon-angleup btn-mobile-close__icon hidden"></i>
-    </span>
-    <header id="panel" class="panel-cover">
-        <div class="panel-main">
-            <div class="panel-main__inner panel-inverted">
-                <div class="panel-main__content">
-                    <div class="ih-item circle effect right_to_left">            
-                        <a href="https://wzx.is-a.dev/" title="" class="blog-button">
-                            <div class="img"><img src="./images/avatar.png" alt="img" class="js-avatar iUp profilepic"></div>
-                            <div class="info iUp">
-                                <div class="info-back">
-                                    <h2> 
-                                            wzx
-                                    </h2>
-                                    <p>                                        
-                                            ©版权所有
-                                    </p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-                    <!--<h1 class="panel-cover__title panel-title iUp">
-                        <a href="#" title="wzx"></a>
-                    </h1>-->
-                    <br/>
-                    <p class="panel-cover__subtitle panel-subtitle iUp" style="font-size:22px; color:#FFFFFF;"><strong>wzx个人主页</strong></p>					
-                    <hr class="panel-cover__divider iUp" />
-                    <p id="description" class="panel-cover__description iUp">黑暗孕育了光明，而光明却背离黑暗。诅咒黑暗。
-                        <br/>
-                        -「<strong>浮士德</strong>」
-                    </p>
-					<hr class="panel-cover__divider iUp" />
-					<div class="iUp">
-						<a href="./status" target="_blank" style="font-size:16px; color:#00FF7F;">站点状态</a>
-					</div>
-                    <div class="navigation-wrapper iUp">
-                        <div>
-                            <nav class="cover-navigation cover-navigation--primary">
-                                <ul class="navigation">
-                                    <li class="navigation__item">
-                                        <a href="https://wzx.js.cool/" class="blog-button" target="_blank">博客站点</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://wzxn.js.cool/" class="blog-button" target="_blank">网址导航</a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://wzxg.js.cool/" class="blog-button" target="_blank">游戏中心</a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>						
-                        <div class="iUp">
-                            <nav class="cover-navigation navigation--social">
-                                <ul class="navigation">
-                                    <li class="navigation__item">
-                                        <a href="https://github.com/website-pages" title="GitHub" target="_blank">
-                                            <i class='fa fa-github'></i>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="mailto:unpu123456@hotmail.com" title="电子邮件">
-                                            <i class='fa fa-envelope'></i>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="http://wpa.qq.com/msgrd?v=3&uin=1961488623&site=qq&menu=yes" title="QQ" target="_balnk">
-                                            <i class='fa fa-qq'></i>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="https://wzx.js.cool/post-images/wechat.jpg" title="微信" target="_blank">
-                                            <i class='fa fa-wechat'></i>
-                                        </a>
-                                    </li>
-                                    <li class="navigation__item">
-                                        <a href="http://wzx.js.cool/post/about" title="关于" target="_blank">
-                                            <i class='fa fa-info-circle'></i>
-                                        </a>
-                                    </li>
-									<li class="navigation__item">
-                                        <a href="./images/donate.png" title="捐赠" target="_blank">
-                                            <i class='fa fa-cny'></i>
-                                        </a>
-                                    </li>
-									<li class="navigation__item">
-                                        <a href="javascript:void(0);" title="刷新" onclick="toRefresh()">
-                                            <i class='fa fa-refresh'></i>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </nav>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="panel-cover--overlay cover-slate" style="background-repeat:no-repeat; background-attachment:fixed;background-size:cover;background-image: url(https://www.dmoe.cc/random.php);"></div>
-            <div class="bg-cover"></div>
-        </div>
-        <div class="remark iUp">
-            <p class="power">©版权所有
-                <a href="/">wzx个人主页</a>，保留一切权利。
-                Powered by <a href="https://github.com/website-pages" target="_blank">website-pages</a>.
-                <a href="https://icp.gov.moe/?keyword=20220275" target="_blank">萌ICP备20220275号</a>
-            </p>
-        </div>
-    </header>
-    <script type="text/javascript" src="./assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+<body> 
+	<div class="main-style">
+	 <div class="no_data">
+		<img class="no_dataImg" src="yanyi/images/2.gif" alt="暂无数据">
+		<div class="no_dataText">网站改造升级中……暂时关闭站点<p>给您带来不便敬请谅解！</p></div>
+		<img class="width100" src="yanyi/images/1.png" alt="底部">
+	  </div>
+	</div>
 </body>
-<script>
-	function toRefresh(){
-		window.location.reload();
-	}
-</script>
-<style>
-/*鼠标样式开始*/
-/*鼠标指针样式*/
-body{cursor:url("assets/curs/normal.cur"),default;}
-/*鼠标链接指针样式*/
-a:hover{cursor:url("assets/curs/link.cur"),pointer;}
-/*鼠标样式结束*/
-</style>
-
-<span class="js-cursor-container"></span>
-    <script>
-        (function fairyDustCursor() {
- 
-            var possibleColors = ["#D61C59", "#E7D84B", "#1B8798"]
-            var width = window.innerWidth;
-            var height = window.innerHeight;
-            var cursor = { x: width / 2, y: width / 2 };
-            var particles = [];
- 
-            function init() {
-                bindEvents();
-                loop();
-            }
- 
-            // Bind events that are needed
-            function bindEvents() {
-                document.addEventListener('mousemove', onMouseMove);
-                window.addEventListener('resize', onWindowResize);
-            }
- 
-            function onWindowResize(e) {
-                width = window.innerWidth;
-                height = window.innerHeight;
-            }
- 
-            function onMouseMove(e) {
-                cursor.x = e.clientX;
-                cursor.y = e.clientY;
- 
-                addParticle(cursor.x, cursor.y, possibleColors[Math.floor(Math.random() * possibleColors.length)]);
-            }
- 
-            function addParticle(x, y, color) {
-                var particle = new Particle();
-                particle.init(x, y, color);
-                particles.push(particle);
-            }
- 
-            function updateParticles() {
- 
-                // Updated
-                for (var i = 0; i < particles.length; i++) {
-                    particles[i].update();
-                }
- 
-                // Remove dead particles
-                for (var i = particles.length - 1; i >= 0; i--) {
-                    if (particles[i].lifeSpan < 0) {
-                        particles[i].die();
-                        particles.splice(i, 1);
-                    }
-                }
- 
-            }
- 
-            function loop() {
-                requestAnimationFrame(loop);
-                updateParticles();
-            }
- 
-            /**
-             * Particles
-             */
- 
-            function Particle() {
- 
-                this.character = "*";
-                this.lifeSpan = 120; //ms
-                this.initialStyles = {
-                    "position": "fixed",
-                    "display": "inline-block",
-                    "top": "0px",
-                    "left": "0px",
-                    "pointerEvents": "none",
-                    "touch-action": "none",
-                    "z-index": "10000000",
-                    "fontSize": "25px",
-                    "will-change": "transform"
-                };
- 
-                // Init, and set properties
-                this.init = function (x, y, color) {
- 
-                    this.velocity = {
-                        x: (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
-                        y: 1
-                    };
- 
-                    this.position = { x: x + 10, y: y + 10 };
-                    this.initialStyles.color = color;
- 
-                    this.element = document.createElement('span');
-                    this.element.innerHTML = this.character;
-                    applyProperties(this.element, this.initialStyles);
-                    this.update();
- 
-                    document.querySelector('.js-cursor-container').appendChild(this.element);
-                };
- 
-                this.update = function () {
-                    this.position.x += this.velocity.x;
-                    this.position.y += this.velocity.y;
-                    this.lifeSpan--;
- 
-                    this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px, 0) scale(" + (this.lifeSpan / 120) + ")";
-                }
- 
-                this.die = function () {
-                    this.element.parentNode.removeChild(this.element);
-                }
- 
-            }
- 
-            /**
-             * Utils
-             */
- 
-            // Applies css `properties` to an element.
-            function applyProperties(target, properties) {
-                for (var key in properties) {
-                    target.style[key] = properties[key];
-                }
-            }
- 
-            if (!('ontouchstart' in window || navigator.msMaxTouchPoints)) init();
-        })();    
-    </script>
 </html>
